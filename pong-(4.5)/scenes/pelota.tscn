@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://omwifxoxcb4m"]
+[gd_scene load_steps=4 format=3 uid="uid://omwifxoxcb4m"]
 
 [ext_resource type="Texture2D" uid="uid://c70n0ccl07idb" path="res://assets/Ball.png" id="1_oq35t"]
 [ext_resource type="Script" uid="uid://cs4m5t38a318" path="res://scripts/pelota.gd" id="1_w0e16"]
@@ -6,14 +6,14 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_oq35t"]
 radius = 11.0
 
-[node name="PelotaNodo" type="Node2D" unique_id=1293152057]
+[node name="Pelota" type="Node2D"]
 
-[node name="Pelota" type="CharacterBody2D" parent="." unique_id=318150747]
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 script = ExtResource("1_w0e16")
 
-[node name="Sprite2D" type="Sprite2D" parent="Pelota" unique_id=1376327047]
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
 scale = Vector2(0.7, 0.7)
 texture = ExtResource("1_oq35t")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Pelota" unique_id=1352925551]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 shape = SubResource("CircleShape2D_oq35t")

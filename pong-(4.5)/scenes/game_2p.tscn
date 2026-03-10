@@ -1,0 +1,17 @@
+[gd_scene load_steps=5 format=3 uid="uid://bu7s35go5gn30"]
+
+[ext_resource type="PackedScene" uid="uid://b20pg2maogf2h" path="res://scenes/mapa2p.tscn" id="1_ftlic"]
+[ext_resource type="Script" uid="uid://djbn0nciil2hl" path="res://scripts/mapa_2p.gd" id="2_vgdw1"]
+[ext_resource type="PackedScene" uid="uid://omwifxoxcb4m" path="res://scenes/pelota.tscn" id="3_e8n81"]
+[ext_resource type="PackedScene" uid="uid://dbdwduwb4oxuf" path="res://scenes/jugador.tscn" id="4_myd5j"]
+
+[node name="Game2P" type="Node2D"]
+
+[node name="Mapa2P" parent="." instance=ExtResource("1_ftlic")]
+script = ExtResource("2_vgdw1")
+
+[node name="Pelota" parent="." instance=ExtResource("3_e8n81")]
+position = Vector2(640, 360)
+
+[node name="Jugador" parent="." instance=ExtResource("4_myd5j")]
+position = Vector2(110, 360)
