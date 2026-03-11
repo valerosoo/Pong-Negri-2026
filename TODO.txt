@@ -1,0 +1,2 @@
+1-Direcciones para la pelota random
+2-Simplificar algunas funciones (reinicio_der e izq)

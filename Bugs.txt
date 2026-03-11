@@ -1,0 +1,2 @@
+1-Cuando choca el personaje desde arriba a la pelota, este se desplaza hasta chocar hasta la pared
+2-Cuando la pelota rebota en el jugador, el jugador se frena. Produciendo así que el jugador se detenga por un tiempo y luego se mueva devuelta
