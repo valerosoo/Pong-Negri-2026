@@ -3,19 +3,21 @@
 [ext_resource type="Script" uid="uid://d2iejw2ec87uk" path="res://scripts/jugador2.gd" id="1_gnlas"]
 [ext_resource type="Texture2D" uid="uid://dypvpgdentlv2" path="res://assets/paddle.png" id="2_dm4sh"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_lhlt4"]
-size = Vector2(7.5, 72)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_gnlas"]
+radius = 4.6153855
+height = 72.3077
 
-[node name="Jugador2" type="Node2D" unique_id=1131988188]
+[node name="Jugador2" type="Node2D" unique_id=1131988188 groups=["Jugadores"]]
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1016158552]
 script = ExtResource("1_gnlas")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1307006536]
-scale = Vector2(1.3, 1.3)
-shape = SubResource("RectangleShape2D_lhlt4")
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=480406551]
 rotation = 1.5707964
 scale = Vector2(1.3, 1.3)
 texture = ExtResource("2_dm4sh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1307006536]
+position = Vector2(-4.7683716e-07, 0)
+scale = Vector2(1.3, 1.3)
+shape = SubResource("CapsuleShape2D_gnlas")
