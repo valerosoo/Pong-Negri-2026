@@ -10,6 +10,7 @@ height = 72.3077
 [node name="Jugador2" type="Node2D" unique_id=1131988188 groups=["Jugadores"]]
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1016158552]
+platform_floor_layers = 4294967040
 script = ExtResource("1_gnlas")
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=480406551]

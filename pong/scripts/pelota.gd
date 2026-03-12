@@ -2,7 +2,7 @@ extends CharacterBody2D
 class_name Pelota
 
 @export var _MaxAngle = deg_to_rad(60)
-@export var _speed:float = 300
+@export var _speed:float = 400
 var _direction
 
 func _ready() -> void:
