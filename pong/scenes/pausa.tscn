@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://dljps35yyi7f2"]
+
+[ext_resource type="Texture2D" uid="uid://jf8p82q1fodh" path="res://assets/Fondo_Menu.jpeg" id="1_qtdsr"]
+[ext_resource type="Script" uid="uid://bkqnffullr7dd" path="res://scripts/pausa.gd" id="2_qtdsr"]
+
+[node name="Pausa" type="Node2D" unique_id=1102441198]
+process_mode = 2
+
+[node name="FondoPausa" type="Sprite2D" parent="." unique_id=1644967688]
+modulate = Color(1, 1, 1, 0.78431374)
+position = Vector2(640, 360)
+scale = Vector2(1.0666667, 0.6)
+texture = ExtResource("1_qtdsr")
+
+[node name="Pausa" type="Label" parent="." unique_id=361000122]
+offset_left = 524.0
+offset_top = 100.0
+offset_right = 756.0
+offset_bottom = 210.0
+mouse_filter = 0
+theme_override_font_sizes/font_size = 80
+text = "Pausa"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Continuar" type="Label" parent="." unique_id=1490307589]
+offset_left = 543.0
+offset_top = 300.0
+offset_right = 736.0
+offset_bottom = 355.0
+mouse_filter = 0
+theme_override_font_sizes/font_size = 40
+text = "Continuar"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("2_qtdsr")
+
+[node name="Opciones" type="Label" parent="." unique_id=1776404490]
+offset_left = 550.0
+offset_top = 400.0
+offset_right = 730.0
+offset_bottom = 455.0
+mouse_filter = 0
+theme_override_font_sizes/font_size = 40
+text = "Opciones"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Salir" type="Label" parent="." unique_id=1242281081]
+offset_left = 597.0
+offset_top = 500.0
+offset_right = 682.0
+offset_bottom = 555.0
+mouse_filter = 0
+theme_override_font_sizes/font_size = 40
+text = "Salir"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="gui_input" from="Continuar" to="Continuar" method="_on_gui_input"]

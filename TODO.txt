@@ -1,3 +1,7 @@
-1-Simplificar algunas funciones (reinicio_der e izq)
-2-Escena menu
-3-Escena pausa
+3-Menu de opciones
+4-Skins
+5-Modos de juego simples distintos
+6-Modos de juego con mutators (elegible antes de jugar)
+6.1-Ejemplo vld de la pelota, obstáculos, comba de la pelota, tamaño de la pelota, velocidad del jugador, tamaño del jugador,
+forma del mapa
+7-Si pongo un mapa de hielo, que la pelota sea un puck, que los jugadores sean troncos yque se deslizen

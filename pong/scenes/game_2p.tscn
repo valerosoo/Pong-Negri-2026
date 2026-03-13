@@ -5,7 +5,9 @@
 [ext_resource type="PackedScene" uid="uid://omwifxoxcb4m" path="res://scenes/pelota.tscn" id="3_e8n81"]
 [ext_resource type="PackedScene" uid="uid://cpmfd4u3u4d7a" path="res://scenes/jugador2.tscn" id="4_e8n81"]
 [ext_resource type="PackedScene" uid="uid://dbdwduwb4oxuf" path="res://scenes/jugador.tscn" id="4_myd5j"]
-[ext_resource type="PackedScene" uid="uid://fidpupn8wuv3" path="res://scenes/ganador.tscn" id="6_u5lfa"]
+[ext_resource type="PackedScene" uid="uid://fidpupn8wuv3" path="res://scenes/ganadorj1.tscn" id="6_u5lfa"]
+[ext_resource type="PackedScene" uid="uid://bp8o8t6xjj7e0" path="res://scenes/ganadorj2.tscn" id="7_tbbt7"]
+[ext_resource type="PackedScene" uid="uid://dljps35yyi7f2" path="res://scenes/pausa.tscn" id="8_sdvxj"]
 
 [node name="Game2P" type="Node2D" unique_id=1603393313]
 script = ExtResource("1_myd5j")
@@ -21,4 +23,8 @@ position = Vector2(110, 360)
 [node name="Jugador2" parent="." unique_id=1131988188 instance=ExtResource("4_e8n81")]
 position = Vector2(1180, 360)
 
-[node name="Ganador" parent="." unique_id=271162655 instance=ExtResource("6_u5lfa")]
+[node name="GanadorJ1" parent="." unique_id=271162655 instance=ExtResource("6_u5lfa")]
+
+[node name="GanadorJ2" parent="." unique_id=834747900 instance=ExtResource("7_tbbt7")]
+
+[node name="Pausa" parent="." unique_id=1102441198 instance=ExtResource("8_sdvxj")]

@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://jf8p82q1fodh" path="res://assets/Fondo_Menu.jpeg" id="1_pqnrc"]
 
-[node name="Ganador" type="Node2D" unique_id=271162655]
+[node name="GanadorJ1" type="Node2D" unique_id=271162655]
 
 [node name="FondoMenu" type="Sprite2D" parent="." unique_id=583467302]
 modulate = Color(1, 1, 1, 0.78431374)
@@ -13,9 +13,10 @@ texture = ExtResource("1_pqnrc")
 
 [node name="Ganador_Jugador" type="Label" parent="." unique_id=528561736]
 z_index = 2
-offset_left = 429.0
+offset_left = 407.0
 offset_top = 325.0
-offset_right = 852.0
+offset_right = 872.0
 offset_bottom = 394.0
 theme_override_font_sizes/font_size = 50
-text = "Ganador: Jugador"
+text = "Ganador: Jugador 1"
+metadata/_edit_use_anchors_ = true
