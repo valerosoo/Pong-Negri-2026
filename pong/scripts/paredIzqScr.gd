@@ -13,7 +13,7 @@ func _on_body_entered(body) -> void:
 		body.set_physics_process(false)
 		var PelotaNodo = get_parent().get_parent().get_node("Pelota")
 		print("Pelota: " + str(PelotaNodo))
-		var mapa = get_parent().get_parent().get_node("Mapa2P")
+		var mapa = get_parent().get_parent().get_node("Mapa2P_Normal")
 		print(mapa)
 		mapa._gol_para_izq()
 		score_der += 1

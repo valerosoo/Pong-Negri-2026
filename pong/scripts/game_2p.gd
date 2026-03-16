@@ -1,7 +1,7 @@
 extends Node2D
 
-@onready var pared_izq : paredIzqSrc = get_node("Mapa2P/ParedIzq")
-@onready var pared_der : paredDerScr = get_node("Mapa2P/ParedDer")
+@onready var pared_izq : paredIzqSrc = get_node("Mapa2P_Normal/ParedIzq")
+@onready var pared_der : paredDerScr = get_node("Mapa2P_Normal/ParedDer")
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

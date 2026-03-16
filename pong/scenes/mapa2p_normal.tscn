@@ -17,7 +17,7 @@ size = Vector2(5, 720)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_w07mi"]
 size = Vector2(5, 720)
 
-[node name="Mapa2P" type="Node2D" unique_id=1376677369]
+[node name="Mapa2P_Normal" type="Node2D" unique_id=1376677369]
 script = ExtResource("1_81nhf")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1057399778]
