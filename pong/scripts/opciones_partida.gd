@@ -46,6 +46,6 @@ func actualizar_colores_jug():
 
 func arrancar_partida():
 	if mapa_seleccionado == 1 and cantidad_jugadores == 1:
-		get_tree()
+		get_tree().change_scene_to_file("res://scenes/game_1p_normal.tscn")
 	elif mapa_seleccionado == 1 and cantidad_jugadores == 2:
 		get_tree().change_scene_to_file("res://scenes/game_2p_normal.tscn")

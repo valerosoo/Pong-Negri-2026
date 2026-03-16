@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://dyttbdyubfr2x"]
+
+[ext_resource type="Script" uid="uid://bp2ywex3e27m5" path="res://scripts/bot.gd" id="1_qpkb6"]
+[ext_resource type="Texture2D" uid="uid://50mkbue4nqtj" path="res://assets/paddle.png" id="2_hhacj"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hon3i"]
+radius = 3.5502963
+height = 56.80474
+
+[node name="Bot" type="Node2D" unique_id=269430575]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=2096050042]
+platform_floor_layers = 4294967040
+script = ExtResource("1_qpkb6")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=1215934443]
+rotation = 1.5707964
+scale = Vector2(1.3, 1.3)
+texture = ExtResource("2_hhacj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=135027035]
+scale = Vector2(1.6899998, 1.6899998)
+shape = SubResource("CapsuleShape2D_hon3i")

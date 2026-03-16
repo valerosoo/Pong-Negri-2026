@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://b1xg4l0ah0ei"]
 
-[ext_resource type="Script" uid="uid://c8haaqmcna2o4" path="res://opciones_partida.gd" id="1_fy7v4"]
+[ext_resource type="Script" uid="uid://c8haaqmcna2o4" path="res://scripts/opciones_partida.gd" id="1_fy7v4"]
 [ext_resource type="Texture2D" uid="uid://jf8p82q1fodh" path="res://assets/Fondo_Menu.jpeg" id="2_83adn"]
-[ext_resource type="Script" uid="uid://bdykxkh6qk0hd" path="res://normal.gd" id="3_83adn"]
+[ext_resource type="Script" uid="uid://bdykxkh6qk0hd" path="res://scripts/normal.gd" id="3_83adn"]
 [ext_resource type="Script" uid="uid://ckk1fr7m2tp5o" path="res://scripts/hielo.gd" id="4_v8rw5"]
-[ext_resource type="Script" uid="uid://cbcp8aw21dk2w" path="res://un_jugador.gd" id="5_8h7dr"]
+[ext_resource type="Script" uid="uid://cbcp8aw21dk2w" path="res://scripts/un_jugador.gd" id="5_8h7dr"]
 [ext_resource type="Script" uid="uid://c6cs0o87oyd6g" path="res://scripts/dos_jugadores.gd" id="5_u77m4"]
 [ext_resource type="Script" uid="uid://xuaqrug5smom" path="res://scripts/jugar.gd" id="7_8h7dr"]
 
