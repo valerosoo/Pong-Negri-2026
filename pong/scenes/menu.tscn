@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://f1wvpmkrkeso" path="res://scripts/menu.gd" id="1_vjb58"]
 [ext_resource type="Texture2D" uid="uid://jf8p82q1fodh" path="res://assets/Fondo_Menu.jpeg" id="1_yqeox"]
+[ext_resource type="Script" uid="uid://b51or517ajmet" path="res://scripts/opciones.gd" id="3_con2f"]
 
 [node name="Menu" type="Node2D" unique_id=1888987219]
 
@@ -43,5 +44,7 @@ theme_override_font_sizes/font_size = 40
 text = "Opciones"
 horizontal_alignment = 1
 vertical_alignment = 1
+script = ExtResource("3_con2f")
 
 [connection signal="gui_input" from="Jugar" to="Jugar" method="_on_gui_input"]
+[connection signal="gui_input" from="Opciones" to="Opciones" method="_on_gui_input"]
