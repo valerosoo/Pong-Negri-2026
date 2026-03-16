@@ -1,0 +1,90 @@
+[gd_scene format=3 uid="uid://b1xg4l0ah0ei"]
+
+[ext_resource type="Texture2D" uid="uid://jf8p82q1fodh" path="res://assets/Fondo_Menu.jpeg" id="1_wvblx"]
+[ext_resource type="Script" uid="uid://f1wvpmkrkeso" path="res://scripts/menu.gd" id="2_7bdti"]
+
+[node name="Opciones" type="Node2D" unique_id=1524713121]
+
+[node name="FondoMenu" type="Sprite2D" parent="." unique_id=326592451]
+position = Vector2(640, 360)
+scale = Vector2(1.0666667, 0.6)
+texture = ExtResource("1_wvblx")
+
+[node name="Titulo" type="Label" parent="." unique_id=1669209379]
+offset_left = 500.0
+offset_top = 100.0
+offset_right = 780.0
+offset_bottom = 210.0
+mouse_filter = 0
+theme_override_font_sizes/font_size = 80
+text = "Partida"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Mapa" type="Label" parent="." unique_id=95234133]
+offset_left = 586.0
+offset_top = 300.0
+offset_right = 694.0
+offset_bottom = 355.0
+mouse_filter = 0
+theme_override_font_sizes/font_size = 40
+text = "Mapa"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("2_7bdti")
+
+[node name="Normal" type="Label" parent="." unique_id=568246400]
+offset_left = 394.0
+offset_top = 400.0
+offset_right = 540.0
+offset_bottom = 455.0
+mouse_filter = 0
+theme_override_font_sizes/font_size = 40
+text = "Normal"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Hielo" type="Label" parent="." unique_id=377201875]
+offset_left = 740.0
+offset_top = 400.0
+offset_right = 840.0
+offset_bottom = 455.0
+mouse_filter = 0
+theme_override_font_sizes/font_size = 40
+text = "Hielo"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Jugadores" type="Label" parent="." unique_id=804778371]
+offset_left = 544.0
+offset_top = 500.0
+offset_right = 736.0
+offset_bottom = 555.0
+mouse_filter = 0
+theme_override_font_sizes/font_size = 40
+text = "Jugadores"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("2_7bdti")
+
+[node name="UnJugador" type="Label" parent="." unique_id=1590017761]
+offset_left = 325.0
+offset_top = 600.0
+offset_right = 540.0
+offset_bottom = 655.0
+mouse_filter = 0
+theme_override_font_sizes/font_size = 40
+text = "Un Jugador"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DosJugadores" type="Label" parent="." unique_id=1864052309]
+offset_left = 740.0
+offset_top = 600.0
+offset_right = 973.0
+offset_bottom = 655.0
+mouse_filter = 0
+theme_override_font_sizes/font_size = 40
+text = "Dos Jugador"
+horizontal_alignment = 1
+vertical_alignment = 1

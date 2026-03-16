@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://50mkbue4nqtj"
-path="res://.godot/imported/paddle.png-3a0aaebe6a43044daf93673e46fcb481.ctex"
+uid="uid://pxlmasslsx0f"
+path="res://.godot/imported/FondoHielo2.png-fbc6694cffd193d0ac34d1cd6d50af13.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/paddle.png"
-dest_files=["res://.godot/imported/paddle.png-3a0aaebe6a43044daf93673e46fcb481.ctex"]
+source_file="res://assets/FondoHielo2.png"
+dest_files=["res://.godot/imported/FondoHielo2.png-fbc6694cffd193d0ac34d1cd6d50af13.ctex"]
 
 [params]
 
