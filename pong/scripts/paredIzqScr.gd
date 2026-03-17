@@ -11,7 +11,7 @@ func _ready() -> void:
 func _on_body_entered(body) -> void:
 	if body.name == "Pelota":
 		body.set_physics_process(false)
-		var PelotaNodo = get_parent().get_parent().get_node("Pelota")
+		var PelotaNodo = get_parent().get_parent().get_node("PelotaNodo/Pelota")
 		print("Pelota: " + str(PelotaNodo))
 		var mapa = get_parent().get_parent().get_node("Mapa2P_Normal")
 		print(mapa)
