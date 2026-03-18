@@ -5,7 +5,7 @@ class_name Jugador
 var _direction:float = 0
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass 
+	add_to_group("Jugadores")
 
 func _input(event: InputEvent) -> void:
 
@@ -15,7 +15,7 @@ func _input(event: InputEvent) -> void:
 	if event.is_action("S"):
 		_direction = 1
 	
-	if event.is_released():
+	if event.is_action_released("W") or event.is_action_released("S"):
 		_direction = 0
 	
 func _physics_process(delta: float) -> void:

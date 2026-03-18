@@ -15,8 +15,8 @@
 [node name="PelotaNodo" parent="." unique_id=1293152057 instance=ExtResource("2_nrs5p")]
 position = Vector2(640, 360)
 
-[node name="Jugador" parent="." unique_id=1578821484 instance=ExtResource("1_yr7ti")]
-position = Vector2(110, 360)
-
 [node name="Bot" parent="." unique_id=269430575 instance=ExtResource("5_nrs5p")]
 position = Vector2(1180, 360)
+
+[node name="Jugador" parent="." unique_id=1578821484 instance=ExtResource("1_yr7ti")]
+position = Vector2(100, 360)

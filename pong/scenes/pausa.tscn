@@ -2,6 +2,19 @@
 
 [ext_resource type="Texture2D" uid="uid://jf8p82q1fodh" path="res://assets/Fondo_Menu.jpeg" id="1_qtdsr"]
 [ext_resource type="Script" uid="uid://bkqnffullr7dd" path="res://scripts/pausa.gd" id="2_qtdsr"]
+[ext_resource type="Script" uid="uid://b351p25mp08gw" path="res://scripts/salir.gd" id="3_1vvwb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qtdsr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1vvwb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_k5nbw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_d1dax"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_eqlbv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xa0t4"]
 
 [node name="Pausa" type="Node2D" unique_id=1102441198]
 process_mode = 2
@@ -24,18 +37,6 @@ horizontal_alignment = 1
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="Continuar" type="Label" parent="." unique_id=1490307589]
-offset_left = 543.0
-offset_top = 300.0
-offset_right = 736.0
-offset_bottom = 355.0
-mouse_filter = 0
-theme_override_font_sizes/font_size = 40
-text = "Continuar"
-horizontal_alignment = 1
-vertical_alignment = 1
-script = ExtResource("2_qtdsr")
-
 [node name="Opciones" type="Label" parent="." unique_id=1776404490]
 offset_left = 550.0
 offset_top = 400.0
@@ -47,15 +48,29 @@ text = "Opciones"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Salir" type="Label" parent="." unique_id=1242281081]
+[node name="Continuar" type="Button" parent="." unique_id=1574631227]
+offset_left = 543.0
+offset_top = 300.0
+offset_right = 744.0
+offset_bottom = 363.0
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxEmpty_qtdsr")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_1vvwb")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_k5nbw")
+text = "Continuar"
+script = ExtResource("2_qtdsr")
+
+[node name="Salir" type="Button" parent="." unique_id=1665251312]
 offset_left = 597.0
 offset_top = 500.0
-offset_right = 682.0
-offset_bottom = 555.0
-mouse_filter = 0
+offset_right = 690.0
+offset_bottom = 563.0
 theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxEmpty_d1dax")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_eqlbv")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_xa0t4")
 text = "Salir"
-horizontal_alignment = 1
-vertical_alignment = 1
+script = ExtResource("3_1vvwb")
 
-[connection signal="gui_input" from="Continuar" to="Continuar" method="_on_gui_input"]
+[connection signal="pressed" from="Continuar" to="Continuar" method="_on_pressed"]
+[connection signal="pressed" from="Salir" to="Salir" method="_on_pressed"]

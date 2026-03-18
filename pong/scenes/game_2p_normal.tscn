@@ -14,17 +14,17 @@ script = ExtResource("1_m8ruc")
 
 [node name="Mapa2P_Normal" parent="." unique_id=627007809 instance=ExtResource("2_56rsu")]
 
-[node name="Pelota" parent="." unique_id=997405111 instance=ExtResource("3_lqpkg")]
-position = Vector2(640, 360)
-
-[node name="Jugador" parent="." unique_id=1507758313 instance=ExtResource("4_elqri")]
-position = Vector2(110, 360)
-
 [node name="Jugador2" parent="." unique_id=1131988188 instance=ExtResource("5_f1lxc")]
 position = Vector2(1180, 360)
+
+[node name="Jugador" parent="." unique_id=1578821484 instance=ExtResource("4_elqri")]
+position = Vector2(100, 360)
 
 [node name="GanadorJ1" parent="." unique_id=271162655 instance=ExtResource("6_qevfh")]
 
 [node name="GanadorJ2" parent="." unique_id=834747900 instance=ExtResource("7_cfqhv")]
 
 [node name="Pausa" parent="." unique_id=1102441198 instance=ExtResource("8_3vyly")]
+
+[node name="Pelota" parent="." unique_id=997405111 instance=ExtResource("3_lqpkg")]
+position = Vector2(640, 360)

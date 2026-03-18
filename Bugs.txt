@@ -1,2 +1,0 @@
-1-Cuando la pelota rebota en el jugador, el jugador se frena. Produciendo así que el jugador se detenga por un tiempo y luego se mueva devuelta
-2-Cuando gana un jugador, no se vuelve al inicio 

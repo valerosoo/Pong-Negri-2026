@@ -7,6 +7,7 @@
 [ext_resource type="Script" uid="uid://cbcp8aw21dk2w" path="res://scripts/un_jugador.gd" id="5_8h7dr"]
 [ext_resource type="Script" uid="uid://c6cs0o87oyd6g" path="res://scripts/dos_jugadores.gd" id="5_u77m4"]
 [ext_resource type="Script" uid="uid://xuaqrug5smom" path="res://scripts/jugar.gd" id="7_8h7dr"]
+[ext_resource type="Script" uid="uid://ynrk0wdaowgy" path="res://scripts/volver.gd" id="8_mvfsu"]
 
 [node name="OpcionesPartida" type="Node2D" unique_id=1524713121]
 script = ExtResource("1_fy7v4")
@@ -98,9 +99,9 @@ vertical_alignment = 1
 script = ExtResource("5_u77m4")
 
 [node name="Jugar" type="Label" parent="." unique_id=192976568]
-offset_left = 1130.0
+offset_left = 1100.0
 offset_top = 626.0
-offset_right = 1238.0
+offset_right = 1208.0
 offset_bottom = 681.0
 mouse_filter = 0
 theme_override_font_sizes/font_size = 40
@@ -109,8 +110,21 @@ horizontal_alignment = 1
 vertical_alignment = 1
 script = ExtResource("7_8h7dr")
 
+[node name="Volver" type="Label" parent="." unique_id=1401997702]
+offset_left = 72.0
+offset_top = 626.0
+offset_right = 194.0
+offset_bottom = 681.0
+mouse_filter = 0
+theme_override_font_sizes/font_size = 40
+text = "Volver"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("8_mvfsu")
+
 [connection signal="gui_input" from="Normal" to="Normal" method="_on_gui_input"]
 [connection signal="gui_input" from="Hielo" to="Hielo" method="_on_gui_input"]
 [connection signal="gui_input" from="UnJugador" to="UnJugador" method="_on_gui_input"]
 [connection signal="gui_input" from="DosJugadores" to="DosJugadores" method="_on_gui_input"]
 [connection signal="gui_input" from="Jugar" to="Jugar" method="_on_gui_input"]
+[connection signal="gui_input" from="Volver" to="Volver" method="_on_gui_input"]
