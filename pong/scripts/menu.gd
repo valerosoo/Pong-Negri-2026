@@ -1,13 +1,17 @@
-extends Label
+extends Node2D
+
+@onready var labels = [$Jugar , $Opciones]
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	for label in labels:
+		label.gui_input.connect(_on_label_click.bind(label))
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
 
-func _on_gui_input(event: InputEvent) -> void:
+func _on_label_click(event: InputEvent, label) -> void:
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
-		print("Juego")
-		get_tree().change_scene_to_file("res://scenes/opcionesPartida.tscn")
+		if label.name == "Jugar":
+			get_tree().change_scene_to_file("res://scenes/opcionesPartida.tscn")
+
+		elif label.name == "Opciones":
+			print("Opciones")

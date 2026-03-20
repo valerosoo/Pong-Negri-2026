@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cpmfd4u3u4d7a"]
 
-[ext_resource type="Script" uid="uid://d2iejw2ec87uk" path="res://scripts/jugador2.gd" id="1_gnlas"]
+[ext_resource type="Script" uid="uid://ca5i7dyvqtxlo" path="res://scripts/jugadores.gd" id="1_gnlas"]
 [ext_resource type="Texture2D" uid="uid://50mkbue4nqtj" path="res://assets/paddle.png" id="2_dm4sh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gnlas"]
@@ -8,9 +8,10 @@ size = Vector2(7.692308, 72.30771)
 
 [node name="Jugador2" type="Node2D" unique_id=1131988188]
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1016158552 groups=["Jugadores"]]
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1016158552 groups=["Jugador2", "Jugadores"]]
 platform_floor_layers = 4294967040
 script = ExtResource("1_gnlas")
+jugador = 2
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=480406551]
 rotation = 1.5707964

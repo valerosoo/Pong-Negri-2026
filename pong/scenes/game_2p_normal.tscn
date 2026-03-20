@@ -12,7 +12,7 @@
 [node name="Game2P_Normal" type="Node2D" unique_id=1603393313]
 script = ExtResource("1_m8ruc")
 
-[node name="Mapa2P_Normal" parent="." unique_id=627007809 instance=ExtResource("2_56rsu")]
+[node name="Mapa_Normal" parent="." unique_id=627007809 instance=ExtResource("2_56rsu")]
 
 [node name="Jugador2" parent="." unique_id=1131988188 instance=ExtResource("5_f1lxc")]
 position = Vector2(1180, 360)

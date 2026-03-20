@@ -1,14 +1,14 @@
 [gd_scene format=3 uid="uid://dbdwduwb4oxuf"]
 
 [ext_resource type="Texture2D" uid="uid://50mkbue4nqtj" path="res://assets/paddle.png" id="1_g87hm"]
-[ext_resource type="Script" uid="uid://ca5i7dyvqtxlo" path="res://scripts/jugador.gd" id="1_lhlt4"]
+[ext_resource type="Script" uid="uid://ca5i7dyvqtxlo" path="res://scripts/jugadores.gd" id="1_lhlt4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lhlt4"]
 size = Vector2(5.91716, 55.621307)
 
 [node name="Jugador" type="Node2D" unique_id=1578821484]
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=782016163 groups=["Jugadores"]]
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=782016163 groups=["Jugador1", "Jugadores"]]
 platform_floor_layers = 4294967040
 script = ExtResource("1_lhlt4")
 

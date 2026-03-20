@@ -7,7 +7,7 @@ var _direction
 func _ready() -> void:
 	randomize()
 	_setDirectionStart()
-	var mapa2d = get_parent().get_parent().get_node("Mapa2P_Normal")
+	var mapa2d = get_parent().get_parent().get_node("Mapa_Normal")
 	print(mapa2d)
 	mapa2d.gol_izq.connect(_reinicio_para_izq)
 	mapa2d.gol_der.connect(_reinicio_para_der)

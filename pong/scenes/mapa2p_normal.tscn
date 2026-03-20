@@ -1,9 +1,8 @@
 [gd_scene format=3 uid="uid://b20pg2maogf2h"]
 
 [ext_resource type="Script" uid="uid://b3hkc23oyvcgo" path="res://scripts/mapa_2pSrc.gd" id="1_81nhf"]
-[ext_resource type="Script" uid="uid://oclkrbdfw167" path="res://scripts/paredDerScr.gd" id="1_84cu4"]
+[ext_resource type="Script" uid="uid://oclkrbdfw167" path="res://scripts/paredes.gd" id="1_84cu4"]
 [ext_resource type="Texture2D" uid="uid://dhx8tvw4a13o4" path="res://assets/Board.png" id="1_alube"]
-[ext_resource type="Script" uid="uid://dguyvp0hwyo4v" path="res://scripts/paredIzqScr.gd" id="2_81nhf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_alube"]
 size = Vector2(1280, 5)
@@ -17,7 +16,7 @@ size = Vector2(5, 720)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_w07mi"]
 size = Vector2(5, 720)
 
-[node name="Mapa2P_Normal" type="Node2D" unique_id=1376677369]
+[node name="Mapa_Normal" type="Node2D" unique_id=1376677369]
 script = ExtResource("1_81nhf")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1057399778]
@@ -47,16 +46,17 @@ position = Vector2(640, 720)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Piso" unique_id=376902810]
 shape = SubResource("RectangleShape2D_84cu4")
 
-[node name="ParedDer" type="Area2D" parent="." unique_id=1061205948]
+[node name="ParedDer" type="Area2D" parent="." unique_id=1061205948 groups=["paredes"]]
 position = Vector2(1280, 360)
 script = ExtResource("1_84cu4")
+arco = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ParedDer" unique_id=1603033928]
 shape = SubResource("RectangleShape2D_81nhf")
 
-[node name="ParedIzq" type="Area2D" parent="." unique_id=2003525651]
+[node name="ParedIzq" type="Area2D" parent="." unique_id=2003525651 groups=["paredes"]]
 position = Vector2(0, 360)
-script = ExtResource("2_81nhf")
+script = ExtResource("1_84cu4")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ParedIzq" unique_id=1232772860]
 shape = SubResource("RectangleShape2D_w07mi")

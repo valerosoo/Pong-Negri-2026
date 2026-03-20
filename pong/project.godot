@@ -27,6 +27,9 @@ window/size/viewport_height=720
 [global_group]
 
 Jugadores="Grupo para englobar a los jugadores"
+Jugador2=""
+Jugador1=""
+paredes=""
 
 [input]
 
