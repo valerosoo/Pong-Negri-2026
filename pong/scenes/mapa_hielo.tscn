@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://pxlmasslsx0f" path="res://assets/FondoHielo2.png" id="1_bsph6"]
 
-[node name="MapaHielo" type="Node2D" unique_id=1528542022]
+[node name="Mapa_Hielo" type="Node2D" unique_id=1528542022]
 
 [node name="FondoHielo2" type="Sprite2D" parent="." unique_id=1512800968]
 position = Vector2(320, 540)

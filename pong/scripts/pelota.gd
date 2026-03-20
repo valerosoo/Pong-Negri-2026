@@ -5,6 +5,7 @@ class_name Pelota
 var _direction
 
 func _ready() -> void:
+	add_to_group("pelota")
 	randomize()
 	_setDirectionStart()
 	var mapa2d = get_parent().get_parent().get_node("Mapa_Normal")

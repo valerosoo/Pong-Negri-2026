@@ -1,3 +1,4 @@
+1-Simplificar códigos del label del opciones partida
 2-Simplificacion de codigos
 3-Menu de opciones
 4-Skins

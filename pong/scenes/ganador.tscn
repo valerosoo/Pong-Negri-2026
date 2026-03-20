@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://jf8p82q1fodh" path="res://assets/Fondo_Menu.jpeg" id="1_pqnrc"]
 
-[node name="GanadorJ1" type="Node2D" unique_id=271162655]
+[node name="Ganador" type="Node2D" unique_id=271162655]
 
 [node name="FondoMenu" type="Sprite2D" parent="." unique_id=583467302]
 modulate = Color(1, 1, 1, 0.78431374)

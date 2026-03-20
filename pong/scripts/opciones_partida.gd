@@ -45,7 +45,7 @@ func actualizar_colores_jug():
 		jugador2.modulate = Color.GREEN
 
 func arrancar_partida():
-	if mapa_seleccionado == 1 and cantidad_jugadores == 1:
-		get_tree().change_scene_to_file("res://scenes/game_1p_normal.tscn")
-	elif mapa_seleccionado == 1 and cantidad_jugadores == 2:
-		get_tree().change_scene_to_file("res://scenes/game_2p_normal.tscn")
+	ConfigPartida.mapa = mapa_seleccionado
+	ConfigPartida.jugadores = cantidad_jugadores
+	
+	get_tree().change_scene_to_file("res://scenes/game.tscn")

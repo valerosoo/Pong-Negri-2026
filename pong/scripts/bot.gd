@@ -5,32 +5,24 @@ class_name Bot
 var _pelota
 
 func _ready() -> void:
-	pass
+	await _buscar_pelota()
 
 func _physics_process(delta: float) -> void:
+	print("bot local:", position.x)
+	print("bot global:", global_position.x)
+	print("padre:", get_parent().global_position.x)
+	if _pelota == null:
+		return
+	
 	var altura = get_viewport_rect().size.y
-	print("Altura: " + str(altura))
 	var bajo_pantalla = altura/2
-	print("Bajo: " + str(bajo_pantalla))
 	var alto_pantalla = -bajo_pantalla
-	print("Alto: " + str(alto_pantalla))
-	
-	var root = get_parent().get_parent()
-	
-	#Este while es porque al jugar al modo vs bot y seleccionas rapido el modo, no llega a cargar la pelota y crashea.
-	#No está en ready porque no llegaba a cargarlo tampoco
-	while _pelota == null:
-		if root.has_node("PelotaNodo/Pelota"):
-			_pelota = root.get_node("PelotaNodo/Pelota")
-		await get_tree().process_frame
 	
 	if _pelota._direction.x < 0:
 		position.y += clamp(0 - position.y, -_speed * delta, _speed * delta)
-		move_and_slide()
 		return
 	
 	if _pelota._direction.x > 0:
-		
 		
 		print("Pelota ", _pelota.global_position.x)
 		print("Bot ", global_position.x)
@@ -51,3 +43,12 @@ func _physics_process(delta: float) -> void:
 		
 		position.y += clamp(error, -_speed * delta, _speed * delta)
 	move_and_slide()
+
+func _buscar_pelota():
+	while _pelota == null:
+		if not is_inside_tree():
+			return
+		
+		_pelota = get_tree().get_first_node_in_group("pelota")
+			
+		await get_tree().process_frame

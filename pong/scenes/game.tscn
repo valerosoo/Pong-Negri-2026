@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://bu7s35go5gn30"]
+
+[ext_resource type="Script" uid="uid://bddrd1lp7vode" path="res://scripts/game.gd" id="1_vtaks"]
+[ext_resource type="PackedScene" uid="uid://b20pg2maogf2h" path="res://scenes/mapa_normal.tscn" id="2_kvpfn"]
+[ext_resource type="PackedScene" uid="uid://cpmfd4u3u4d7a" path="res://scenes/jugador2.tscn" id="3_dinhu"]
+[ext_resource type="PackedScene" uid="uid://dbdwduwb4oxuf" path="res://scenes/jugador.tscn" id="4_kvuet"]
+[ext_resource type="PackedScene" uid="uid://fidpupn8wuv3" path="res://scenes/ganador.tscn" id="5_trtic"]
+[ext_resource type="PackedScene" uid="uid://dyttbdyubfr2x" path="res://scenes/bot.tscn" id="7_ca42v"]
+[ext_resource type="PackedScene" uid="uid://k5c2s8nab5x" path="res://scenes/mapa_hielo.tscn" id="8_rysoc"]
+[ext_resource type="PackedScene" uid="uid://dljps35yyi7f2" path="res://scenes/pausa.tscn" id="9_ssvqc"]
+[ext_resource type="PackedScene" uid="uid://omwifxoxcb4m" path="res://scenes/pelota.tscn" id="10_264po"]
+
+[node name="Game" type="Node2D" unique_id=1603393313]
+script = ExtResource("1_vtaks")
+
+[node name="Mapa_Normal" parent="." unique_id=627007809 instance=ExtResource("2_kvpfn")]
+
+[node name="Jugador2" parent="." unique_id=1131988188 instance=ExtResource("3_dinhu")]
+position = Vector2(1180, 360)
+
+[node name="Jugador" parent="." unique_id=1578821484 instance=ExtResource("4_kvuet")]
+position = Vector2(100, 360)
+
+[node name="Ganador" parent="." unique_id=271162655 instance=ExtResource("5_trtic")]
+
+[node name="Bot" parent="." unique_id=269430575 instance=ExtResource("7_ca42v")]
+position = Vector2(1180, 360)
+
+[node name="Mapa_Hielo" parent="." unique_id=1528542022 instance=ExtResource("8_rysoc")]
+
+[node name="Pelota" parent="." unique_id=997405111 instance=ExtResource("10_264po")]
+position = Vector2(640, 360)
+
+[node name="Pausa" parent="." unique_id=1102441198 instance=ExtResource("9_ssvqc")]

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://b20pg2maogf2h"]
 
-[ext_resource type="Script" uid="uid://b3hkc23oyvcgo" path="res://scripts/mapa_2pSrc.gd" id="1_81nhf"]
+[ext_resource type="Script" uid="uid://b3hkc23oyvcgo" path="res://scripts/mapa_normal.gd" id="1_81nhf"]
 [ext_resource type="Script" uid="uid://oclkrbdfw167" path="res://scripts/paredes.gd" id="1_84cu4"]
 [ext_resource type="Texture2D" uid="uid://dhx8tvw4a13o4" path="res://assets/Board.png" id="1_alube"]
 
