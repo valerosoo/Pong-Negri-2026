@@ -41,7 +41,7 @@ No es necesario instalar nada más.
 1.  Descargar o clonar el repositorio:
 
 ```
-git clone https://github.com/USUARIO/REPOSITORIO.git
+git clone https://github.com/valerosoo/Pong-Negri-2026.git
 ```
 
 2.  Abrir **Godot Engine**.
