@@ -9,5 +9,6 @@ func _process(delta: float) -> void:
 
 func _on_gui_input(event: InputEvent) -> void:
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
-		print("Juego")
+		get_parent().get_node("Click").play()
+		await get_parent().get_node("Click").finished
 		get_tree().change_scene_to_file("res://scenes/menu.tscn")

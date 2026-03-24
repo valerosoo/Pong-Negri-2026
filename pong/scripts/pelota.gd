@@ -17,6 +17,7 @@ func _physics_process(delta: float) -> void:
 	var collision = move_and_collide(_direction * _speed * delta)
 	
 	if collision:
+		$Hit.play()
 		var collider = collision.get_collider()
 		if collider.is_in_group("Jugadores") or collider is Bot:
 			var paddle_center = collider.global_position.y

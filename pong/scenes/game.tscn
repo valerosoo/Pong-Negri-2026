@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://dbdwduwb4oxuf" path="res://scenes/jugador.tscn" id="4_kvuet"]
 [ext_resource type="PackedScene" uid="uid://fidpupn8wuv3" path="res://scenes/ganador.tscn" id="5_trtic"]
 [ext_resource type="PackedScene" uid="uid://dyttbdyubfr2x" path="res://scenes/bot.tscn" id="7_ca42v"]
-[ext_resource type="PackedScene" uid="uid://k5c2s8nab5x" path="res://scenes/mapa_hielo.tscn" id="8_rysoc"]
+[ext_resource type="AudioStream" uid="uid://bdu8nryxvmnn4" path="res://sounds/victoryff.swf.mp3" id="9_0tnpc"]
 [ext_resource type="PackedScene" uid="uid://dljps35yyi7f2" path="res://scenes/pausa.tscn" id="9_ssvqc"]
 [ext_resource type="PackedScene" uid="uid://omwifxoxcb4m" path="res://scenes/pelota.tscn" id="10_264po"]
 
@@ -26,9 +26,12 @@ position = Vector2(100, 360)
 [node name="Bot" parent="." unique_id=269430575 instance=ExtResource("7_ca42v")]
 position = Vector2(1180, 360)
 
-[node name="Mapa_Hielo" parent="." unique_id=1528542022 instance=ExtResource("8_rysoc")]
-
 [node name="Pelota" parent="." unique_id=997405111 instance=ExtResource("10_264po")]
 position = Vector2(640, 360)
 
 [node name="Pausa" parent="." unique_id=1102441198 instance=ExtResource("9_ssvqc")]
+
+[node name="Ganar" type="AudioStreamPlayer" parent="." unique_id=1551248595]
+process_mode = 3
+stream = ExtResource("9_0tnpc")
+volume_db = -5.474

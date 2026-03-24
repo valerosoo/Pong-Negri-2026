@@ -11,7 +11,8 @@ func _gui_input(event):
 	if event is InputEventMouseButton \
 	and event.button_index == MOUSE_BUTTON_LEFT \
 	and event.pressed:
-		
+		get_parent().get_node("Click").play()
+		await get_parent().get_node("Click").finished
 		get_tree().paused = false
 		get_parent().visible = false
 

@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://c70n0ccl07idb" path="res://assets/Ball.png" id="1_oq35t"]
 [ext_resource type="Script" uid="uid://cs4m5t38a318" path="res://scripts/pelota.gd" id="1_w0e16"]
+[ext_resource type="AudioStream" uid="uid://cucl281ftmlmt" path="res://sounds/freesound_community-soccerballkick-6770 (mp3cut.net).mp3" id="2_bqh0h"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_oq35t"]
 radius = 11.0
@@ -10,6 +11,9 @@ radius = 11.0
 
 [node name="Pelota" type="CharacterBody2D" parent="." unique_id=318150747]
 script = ExtResource("1_w0e16")
+
+[node name="Hit" type="AudioStreamPlayer" parent="Pelota" unique_id=2122170589]
+stream = ExtResource("2_bqh0h")
 
 [node name="Sprite2D" type="Sprite2D" parent="Pelota" unique_id=1376327047]
 scale = Vector2(0.7, 0.7)

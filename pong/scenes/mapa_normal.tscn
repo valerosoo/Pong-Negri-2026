@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://b3hkc23oyvcgo" path="res://scripts/mapa_normal.gd" id="1_81nhf"]
 [ext_resource type="Script" uid="uid://oclkrbdfw167" path="res://scripts/paredes.gd" id="1_84cu4"]
 [ext_resource type="Texture2D" uid="uid://dhx8tvw4a13o4" path="res://assets/Board.png" id="1_alube"]
+[ext_resource type="AudioStream" uid="uid://b7r341xdl6usv" path="res://sounds/bet-365-goal-sound.mp3" id="4_uwf4t"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_alube"]
 size = Vector2(1280, 5)
@@ -60,6 +61,10 @@ script = ExtResource("1_84cu4")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ParedIzq" unique_id=1232772860]
 shape = SubResource("RectangleShape2D_w07mi")
+
+[node name="Gol" type="AudioStreamPlayer" parent="." unique_id=1613382431]
+stream = ExtResource("4_uwf4t")
+volume_db = -6.386
 
 [connection signal="body_entered" from="ParedDer" to="ParedDer" method="_on_body_entered"]
 [connection signal="body_entered" from="ParedIzq" to="ParedIzq" method="_on_body_entered"]

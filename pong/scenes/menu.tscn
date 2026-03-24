@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://f1wvpmkrkeso" path="res://scripts/menu.gd" id="1_vjb58"]
 [ext_resource type="Texture2D" uid="uid://jf8p82q1fodh" path="res://assets/Fondo_Menu.jpeg" id="1_yqeox"]
+[ext_resource type="AudioStream" uid="uid://bx80svu0aptbj" path="res://sounds/gta-san-andreas-menu-sound-1 (mp3cut.net).mp3" id="3_con2f"]
 
 [node name="Menu" type="Node2D" unique_id=1888987219]
 script = ExtResource("1_vjb58")
@@ -43,3 +44,6 @@ theme_override_font_sizes/font_size = 40
 text = "Opciones"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Click" type="AudioStreamPlayer" parent="." unique_id=178720093]
+stream = ExtResource("3_con2f")

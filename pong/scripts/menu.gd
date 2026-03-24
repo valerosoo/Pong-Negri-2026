@@ -10,6 +10,8 @@ func _ready() -> void:
 
 func _on_label_click(event: InputEvent, label) -> void:
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
+		$Click.play()
+		await $Click.finished
 		if label.name == "Jugar":
 			get_tree().change_scene_to_file("res://scenes/opcionesPartida.tscn")
 

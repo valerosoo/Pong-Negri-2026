@@ -16,5 +16,5 @@ func _on_body_entered(body) -> void:
 			mapa._gol_en_izq()
 		elif arco == 2:
 			mapa._gol_en_der()
-			
+		get_parent().get_node("Gol").play()
 		get_parent().get_node("Marcador").text = str(mapa.score_izq) + "    -    " + str(mapa.score_der)

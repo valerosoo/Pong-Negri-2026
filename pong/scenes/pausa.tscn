@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://jf8p82q1fodh" path="res://assets/Fondo_Menu.jpeg" id="1_qtdsr"]
 [ext_resource type="Script" uid="uid://bkqnffullr7dd" path="res://scripts/pausa.gd" id="2_qtdsr"]
 [ext_resource type="Script" uid="uid://b351p25mp08gw" path="res://scripts/salir.gd" id="3_1vvwb"]
+[ext_resource type="AudioStream" uid="uid://bx80svu0aptbj" path="res://sounds/gta-san-andreas-menu-sound-1 (mp3cut.net).mp3" id="4_k5nbw"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qtdsr"]
 
@@ -71,6 +72,9 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_eqlbv")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_xa0t4")
 text = "Salir"
 script = ExtResource("3_1vvwb")
+
+[node name="Click" type="AudioStreamPlayer" parent="." unique_id=714534506]
+stream = ExtResource("4_k5nbw")
 
 [connection signal="pressed" from="Continuar" to="Continuar" method="_on_pressed"]
 [connection signal="pressed" from="Salir" to="Salir" method="_on_pressed"]
