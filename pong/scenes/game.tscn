@@ -15,15 +15,15 @@ script = ExtResource("1_vtaks")
 
 [node name="Mapa_Normal" parent="." unique_id=627007809 instance=ExtResource("2_kvpfn")]
 
-[node name="Jugador2" parent="." unique_id=1131988188 instance=ExtResource("3_dinhu")]
+[node name="Jugador2" parent="." unique_id=1131988188 groups=["Jugador_Der"] instance=ExtResource("3_dinhu")]
 position = Vector2(1180, 360)
 
-[node name="Jugador" parent="." unique_id=1578821484 instance=ExtResource("4_kvuet")]
+[node name="Jugador" parent="." unique_id=1578821484 groups=["Jugador_Izq"] instance=ExtResource("4_kvuet")]
 position = Vector2(100, 360)
 
 [node name="Ganador" parent="." unique_id=271162655 instance=ExtResource("5_trtic")]
 
-[node name="Bot" parent="." unique_id=269430575 instance=ExtResource("7_ca42v")]
+[node name="Bot" parent="." unique_id=269430575 groups=["Jugador_Der"] instance=ExtResource("7_ca42v")]
 position = Vector2(1180, 360)
 
 [node name="Pelota" parent="." unique_id=997405111 instance=ExtResource("10_264po")]

@@ -8,9 +8,6 @@ func _ready() -> void:
 	await _buscar_pelota()
 
 func _physics_process(delta: float) -> void:
-	print("bot local:", position.x)
-	print("bot global:", global_position.x)
-	print("padre:", get_parent().global_position.x)
 	if _pelota == null:
 		return
 	
@@ -24,8 +21,6 @@ func _physics_process(delta: float) -> void:
 	
 	if _pelota._direction.x > 0:
 		
-		print("Pelota ", _pelota.global_position.x)
-		print("Bot ", global_position.x)
 		var tiempo = (global_position.x - _pelota.global_position.x  ) / (_pelota._direction.x * _pelota._speed)
 		tiempo = clamp(tiempo, 0, 2)
 		

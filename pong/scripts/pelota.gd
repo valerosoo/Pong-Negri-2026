@@ -9,7 +9,6 @@ func _ready() -> void:
 	randomize()
 	_setDirectionStart()
 	var mapa2d = get_parent().get_parent().get_node("Mapa_Normal")
-	print(mapa2d)
 	mapa2d.gol_izq.connect(_reinicio_para_izq)
 	mapa2d.gol_der.connect(_reinicio_para_der)
 
@@ -47,24 +46,29 @@ func _physics_process(delta: float) -> void:
 		position += collision.get_normal() * 4
 
 func _reinicio_para_izq():
-	_setDirection(-1)
-	position = Vector2(0,0)
-	get_parent().get_node("Pelota").set_physics_process(true)
+	global_position = get_viewport_rect().size / 2
+	var jugador = get_tree().get_first_node_in_group("Jugador_Izq")
+	_setDirectionToPlayer(jugador)
+	set_physics_process(true)
 	_speed = 400
 	
 func _reinicio_para_der():
-	_setDirection(1)
-	position = Vector2(0,0)
-	get_parent().get_node("Pelota").set_physics_process(true)
+	global_position = get_viewport_rect().size / 2
+	var jugador = get_tree().get_first_node_in_group("Jugador_Der")
+	_setDirectionToPlayer(jugador)
+	set_physics_process(true)
 	_speed = 400
 	
 func _setDirectionStart():
 	var _randomStart = [-1 , 1].pick_random()
 	var _randomDirection = randf_range(-1 , 1) * 0.2
 	_direction = Vector2(_randomStart , _randomDirection).normalized()
-	
-func _setDirection(start):
-	var _randomDirection = randf_range(-1 , 1) * 0.2
-	_direction = Vector2(start , _randomDirection)
 
+func _setDirectionToPlayer(player):
+	if player == null:
+		return
 	
+	var cuerpo = player.get_node("CharacterBody2D")
+	var centro_jugador = cuerpo.global_position
+	
+	_direction = (centro_jugador - global_position).normalized()

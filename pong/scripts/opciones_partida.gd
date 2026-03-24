@@ -43,8 +43,23 @@ func actualizar_colores_jug():
 		jugador2.modulate = Color.GREEN
 
 func arrancar_partida():
+	var falta_algo = false
+	
+	if mapa_seleccionado == 0:
+		mapa1.modulate = Color.RED
+		falta_algo = true
+	
+	if cantidad_jugadores == 0:
+		jugador1.modulate = Color.RED
+		jugador2.modulate = Color.RED
+		falta_algo = true
+	
+	if falta_algo:
+		return
+	
 	$Click.play()
 	await $Click.finished
+	
 	ConfigPartida.mapa = mapa_seleccionado
 	ConfigPartida.jugadores = cantidad_jugadores
 	
