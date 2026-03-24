@@ -29,11 +29,9 @@ iniciar la partida.
 3.  Extraer el contenido.
 4.  Ejecutar:
 
-```{=html}
-<!-- -->
 ```
-    pong.exe
-
+pong.exe
+```
 No es necesario instalar nada más.
 
 ------------------------------------------------------------------------
@@ -42,19 +40,17 @@ No es necesario instalar nada más.
 
 1.  Descargar o clonar el repositorio:
 
-```{=html}
-<!-- -->
 ```
-    git clone https://github.com/USUARIO/REPOSITORIO.git
+git clone https://github.com/USUARIO/REPOSITORIO.git
+```
 
 2.  Abrir **Godot Engine**.
 3.  Seleccionar **Import**.
 4.  Abrir el archivo:
 
-```{=html}
-<!-- -->
 ```
-    project.godot
+project.godot
+```
 
 5.  Ejecutar el proyecto.
 
