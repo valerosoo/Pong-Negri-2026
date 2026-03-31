@@ -3,6 +3,8 @@ extends Node2D
 @onready var mapa_normal = $Mapa_Normal
 @onready var bot = $Bot
 @onready var jugador2 = $Jugador2
+@onready var bot2 = $Bot2
+@onready var jugador = $Jugador
 
 var mapa
 var juego_terminado = false
@@ -28,12 +30,41 @@ func _ready() -> void:
 		jugador2.visible = false
 		jugador2.set_physics_process(false)
 		jugador2.set_process(false)
+		
+		bot2.queue_free()
+		bot2.visible = false
+		bot2.set_physics_process(false)
+		bot2.set_process(false)
+
+	elif ConfigPartida.jugadores == -1:
+		bot.visible = true
+		bot.set_physics_process(true)
+		bot.set_process(true)
+		
+		bot2.visible = true
+		bot2.set_physics_process(true)
+		bot2.set_process(true)
+
+		jugador2.queue_free()
+		jugador2.visible = false
+		jugador2.set_physics_process(false)
+		jugador2.set_process(false)
+		
+		jugador.queue_free()
+		jugador.visible = false
+		jugador.set_physics_process(false)
+		jugador.set_process(false)
 
 	else:
 		bot.queue_free()
 		bot.visible = true
 		bot.set_physics_process(false)
 		bot.set_process(false)
+		
+		bot2.queue_free()
+		bot2.visible = true
+		bot2.set_physics_process(false)
+		bot2.set_process(false)
 
 		jugador2.visible = true
 		jugador2.set_physics_process(true)

@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://cpmfd4u3u4d7a" path="res://scenes/jugador2.tscn" id="3_dinhu"]
 [ext_resource type="PackedScene" uid="uid://dbdwduwb4oxuf" path="res://scenes/jugador.tscn" id="4_kvuet"]
 [ext_resource type="PackedScene" uid="uid://fidpupn8wuv3" path="res://scenes/ganador.tscn" id="5_trtic"]
+[ext_resource type="PackedScene" uid="uid://bswgdjfy4rh1s" path="res://scenes/bot_2.tscn" id="6_vtaks"]
 [ext_resource type="PackedScene" uid="uid://dyttbdyubfr2x" path="res://scenes/bot.tscn" id="7_ca42v"]
 [ext_resource type="AudioStream" uid="uid://bdu8nryxvmnn4" path="res://sounds/victoryff.swf.mp3" id="9_0tnpc"]
 [ext_resource type="PackedScene" uid="uid://dljps35yyi7f2" path="res://scenes/pausa.tscn" id="9_ssvqc"]
@@ -22,6 +23,9 @@ position = Vector2(1180, 360)
 position = Vector2(100, 360)
 
 [node name="Ganador" parent="." unique_id=271162655 instance=ExtResource("5_trtic")]
+
+[node name="Bot2" parent="." unique_id=1972326795 instance=ExtResource("6_vtaks")]
+position = Vector2(100, 360)
 
 [node name="Bot" parent="." unique_id=269430575 groups=["Jugador_Der"] instance=ExtResource("7_ca42v")]
 position = Vector2(1180, 360)

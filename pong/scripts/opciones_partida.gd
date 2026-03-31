@@ -7,6 +7,7 @@ var cantidad_jugadores = 0
 @onready var mapa1 = $Normal
 @onready var jugador1 = $UnJugador
 @onready var jugador2 = $DosJugadores
+@onready var fullia = $FullIA
 
 func seleccionar_mapa1():
 	$Click.play()
@@ -26,6 +27,12 @@ func seleccionar_dosJugadores():
 	cantidad_jugadores = 2
 	actualizar_colores_jug()
 
+func seleccionar_fullIA():
+	$Click.play()
+	await $Click.finished
+	cantidad_jugadores=-1
+	actualizar_colores_jug()
+
 func actualizar_colores():
 	mapa1.modulate = Color.WHITE
 	
@@ -41,6 +48,10 @@ func actualizar_colores_jug():
 		jugador1.modulate = Color.GREEN
 	elif cantidad_jugadores == 2:
 		jugador2.modulate = Color.GREEN
+	elif cantidad_jugadores == -1:
+		fullia.modulate = Color.GREEN
+	elif cantidad_jugadores == 0:
+		pass
 
 func arrancar_partida():
 	var falta_algo = false
